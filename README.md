@@ -1,7 +1,31 @@
-# Vue 3 + Vite
+# Portifolio
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+![Vue.js](https://img.shields.io/badge/Vue.js-%234FC08D.svg)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-%231a202c.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Recommended IDE Setup
+O projeto "Portifolio" é o meu portfólio pessoal, apresentando um tema inspirado em console (como terminal ou cmd). Ao digitar "help", você pode visualizar os comandos disponíveis. Além disso, é possível explorar meus repositórios e encontrar tutoriais que serão adicionados posteriormente.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Comandos Disponíveis
+
+- `help`: Exibe os comandos disponíveis.
+- `welcome`: Mostra uma mensagem de boas-vindas.
+- `user`: Apresenta informações sobre o usuário.
+- `tutorials`: Lista os tutoriais disponíveis.
+- `projects`: Exibe meus projetos.
+
+## Status do Projeto
+
+Em andamento
+
+## Licença
+
+Este projeto é licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
+
+## Autor
+
+Nicro01
+
+---
+
+**Para mais informações ou colaborações:**

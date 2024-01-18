@@ -49,11 +49,15 @@
       <div v-if="outputs[index] == 'welcome'">
         <Welcome />
       </div>
+      <div v-if="outputs[index] == 'tutorial'">
+        <Tutorials name="How To Center a DIV" description="Use TailwindCss" />
+      </div>
       <p
         v-show="
           commands[index] != 'help' &&
           commands[index] != 'projects' &&
-          commands[index] != 'welcome'
+          commands[index] != 'welcome' &&
+          commands[index] != 'tutorials'
         "
         class="text-white my-4"
       >
@@ -68,13 +72,14 @@ import Help from "./components/Help.vue";
 import Projects from "./components/Projects.vue";
 import Welcome from "./components/Welcome.vue";
 import Repositories from "./components/Repositories.vue";
+import Tutorials from "./components/Tutorials.vue";
 
 export default {
   data() {
     return {
       commands: [""],
       outputs: [""],
-      user: "Nicro01",
+      user: "guest",
     };
   },
   components: {
@@ -82,6 +87,7 @@ export default {
     Projects,
     Welcome,
     Repositories,
+    Tutorials,
   },
   mounted() {
     this.$refs.input[0].focus();
@@ -109,6 +115,9 @@ export default {
           break;
         case "projects":
           this.outputs[index] = "projects";
+          break;
+        case "tutorials":
+          this.outputs[index] = "tutorial";
           break;
         default:
           this.outputs[index] = "Unknown command: " + this.commands[index];
